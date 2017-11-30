@@ -1,0 +1,23 @@
+# @fischerq's personal computer configuration
+
+## Setup
+
+A machine running latest Ubuntu (currently 16.04)
+
+Bootstrap these settings by cloning the repository, navigating into the cloned directory and executing the install script `install.sh`
+
+## Components
+
+* Upstart scripts to run services
+    * emacs daemon
+
+* Bash settings
+* Bash aliases
+
+
+add to ~/.bashrc
+
+    if [ -f pathtorepo/pc-config/.bashrc_functions ]; then
+        . pathtorepo/pc-config/bashsetup.sh
+    fi
+
