@@ -118,3 +118,7 @@ END
     touch input.txt
     subl code.py input.txt
 }
+
+sync_scanned_archive() {
+    rclone copy ~/scanned-archive remote:scanned-archive
+}

@@ -17,7 +17,6 @@ Bootstrap these settings by cloning the repository, navigating into the cloned d
 
 add to ~/.bashrc
 
-    if [ -f pathtorepo/pc-config/.bashrc_functions ]; then
-        . pathtorepo/pc-config/bashsetup.sh
-    fi
-
+if [ -f ~/pc-config/bashsetup.sh ]; then
+	. ~/pc-config/bashsetup.sh
+fi
