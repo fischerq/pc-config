@@ -119,6 +119,7 @@ END
     subl code.py input.txt
 }
 
-sync_scanned_archive() {
+sync_archives() {
     rclone copy ~/scanned-archive remote:scanned-archive
+    rclone copy ~/digital-archive remote:digital-archive
 }
