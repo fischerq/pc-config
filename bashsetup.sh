@@ -120,6 +120,12 @@ END
 }
 
 sync_archives() {
-    rclone copy ~/scanned-archive remote:scanned-archive
-    rclone copy ~/digital-archive remote:digital-archive
+    # sync by copying stuff from remote and pushing new 
+    echo "Syncing scanned-archive"
+    rclone -v copy remote:scanned-archive ~/scanned-archive
+    rclone -v copy ~/scanned-archive remote:scanned-archive
+    
+    echo "Syncing digital-archive"
+    rclone -v copy remote:digital-archive ~/digital-archive 
+    rclone -v copy ~/digital-archive remote:digital-archive
 }
