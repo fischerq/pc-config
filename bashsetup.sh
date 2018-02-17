@@ -129,3 +129,8 @@ sync_archives() {
     rclone -v copy remote:digital-archive ~/digital-archive 
     rclone -v copy ~/digital-archive remote:digital-archive
 }
+
+
+enable_ledger(){
+        wget -q -O - https://www.ledgerwallet.com/support/add_udev_rules.sh | sudo bash
+}
